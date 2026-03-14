@@ -9,9 +9,9 @@ class ApiService {
   ApiService._internal() {
     _dio = Dio(BaseOptions(
       // Chrome / macOS 桌面版用 localhost
-      // Android 模擬器改成 http://10.0.2.2:8000
-      // iOS 模擬器用 http://localhost:8000
-      baseUrl: 'http://localhost:8000',
+      // Android 模擬器改成 https://carcompare-api.onrender.com
+      // iOS 模擬器用 https://carcompare-api.onrender.com
+      baseUrl: 'https://carcompare-api.onrender.com',
       connectTimeout: const Duration(seconds: 10),
       receiveTimeout: const Duration(seconds: 10),
     ));
